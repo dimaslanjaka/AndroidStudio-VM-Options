@@ -9,15 +9,11 @@
 # -Xms1G
 -Xms256m
 
-# Max size of the memory allocation pool, default value is 1280m
-# -Xmx2G
--Xmx1280m
+# Max size of the memory allocation pool, default value is 1280m low-memory recommended 512m
+-Xmx512m
 
 # Sets the size of the allocated class metadata space that will trigger a GC the first time it is exceeded, default max value is 350m
 -XX:MetaspaceSize=512m
-
-# Max heap size to 512MB
--Xmx1024m
 
 # https://stackoverflow.com/questions/39940311/why-does-intellij-not-release-memory-after-closing-a-project
 # this will then release unused VM memory if more than 30%
